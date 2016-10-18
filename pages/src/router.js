@@ -21,12 +21,12 @@ export default class router {
             page = new pages.Login_page();
         } else if (currentUrl.match(/profile/)) {
             page = new pages.Profile_page();
+        } else if (currentUrl.match(/set-lists/)) {
+            page = new pages.SetLists_page();
         } else if (currentUrl.match(/signup/)) {
             page = new pages.Signup_page();
         } else if (currentUrl.match(/songs/)) {
             page = new pages.Songs_page();
-        } else if (currentUrl.match(/set-lists/)) {
-            page = new pages.SetLists_page();
         } else {
             let error = new Error(`\nMessage:\n    The url, ${currentUrl}, does not match any pages defined in the router.js file\nStack Trace:`); // eslint-disable-line prefer-const
             error.message = `${error.stack}`;
@@ -54,14 +54,14 @@ export default class router {
             case 'Profile':
                 page = new pages.Profile_page();
                 break;
+            case 'Set Lists':
+                page = new pages.SetLists_page();
+                break;
             case 'Signup':
                 page = new pages.Signup_page();
                 break;
             case 'Songs':
                 page = new pages.Songs_page();
-                break;
-            case 'Set Lists':
-                page = new pages.Setlists_page();
                 break;
             default:
                 throw Error(`The ${targetPage} page is not defined as a valid route in router.setContext(targetPage)`);

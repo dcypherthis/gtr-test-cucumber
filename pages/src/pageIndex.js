@@ -34,7 +34,7 @@ export default {
     Home_page,
     Login_page,
     Profile_page,
+    SetLists_page,
     Signup_page,
-    Songs_page,
-    SetLists_page
+    Songs_page
 }
