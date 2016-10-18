@@ -1,0 +1,69 @@
+{
+  "name": "gtr-test-cucumber",
+  "version": "0.1.0",
+  "description": "A WebdriverIO-based regression test suite for a guitar practice app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcypherthis/gtr-test-cucumber.git"
+  },
+  "homepage": "http://waffle.io/dcypherthis/gtr-test-cucumber",
+  "bugs": {
+    "url": "http://github.com/dcypherthis/gtr-test/cucumber",
+    "email": "jcypher@myemma.com"
+  },
+  "contributors": [
+    "Josh Cypher <jcypher@myemma.com> (http://github.com/dcypherthis/)",
+    "Jackson Streeter <jstreeter@myemma.com> (http://github.com/streeter8/)"
+  ],
+  "license": "MIT",
+  "main": "config/master.conf.js",
+  "scripts": {
+    "build": "babel emmapages/src --presets babel-preset-es2015 --out-dir dist",
+    "cucumber": "cucumberjs test/features/ -r test/stepDefinitions",
+    "legacy-cucumber": "cucumberjs testLegacy/features/ -r testLegacy/support/stepDefinitions",
+    "debug-local-dev": "DEBUG=true node  --harmony wdio test/config/local/dev.conf.js",
+    "lint": "eslint ./*",
+    "legacy-lint": "eslint testLegacy/support/*",
+    "node-inspector": "node-inspector --debug-port 5859 --no-preload",
+    "selenium": "selenium-standalone start",
+    "selenium-install": "selenium-standalone install",
+    "test": "wdio test/config/jenkins/regressionSuite.jenkins.conf.js",
+    "test-upgrades": "wdio test/config/jenkins/inAppUpgrades.jenkins.conf.js",
+    "test-local": "wdio test/config/local/suite.conf.js",
+    "test-local-dev": "wdio test/config/local/dev.conf.js",
+    "test-local-upgrades": "wdio test/config/local/inAppUpgrades.conf.js",
+    "test-local-localemma": "wdio test/config/local/localemma.conf.js",
+    "test-remote": "wdio test/config/sauceLabs/suite.sauce.conf.js",
+    "test-remote-dev": "wdio test/config/sauceLabs/dev.sauce.conf.js",
+    "test-remote-upgrades": "wdio test/config/sauceLabs/inAppUpgrades.sauce.conf.js",
+    "legacy-test": "wdio testLegacy/config/remote/prod.conf.js",
+    "legacy-test-local": "wdio testLegacy/config/local/suite.conf.js",
+    "legacy-test-local-dev": "wdio testLegacy/config/local/dev.conf.js",
+    "legacy-test-remote": "wdio testLegacy/config/remote/suite.sauce.conf.js",
+    "legacy-test-remote-dev": "wdio testLegacy/config/remote/dev.sauce.conf.js"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "6.14.0",
+    "babel-register": "^6.14.0",
+    "chai": "3.5.0",
+    "config": "^1.21.0",
+    "cucumber": "^1.2.0",
+    "deepmerge": "^0.2.10",
+    "node-uuid": "^1.4.7",
+    "request": "^2.74.0",
+    "wdio-cucumber-framework": "0.2.5",
+    "wdio-dot-reporter": "0.0.6",
+    "wdio-json-reporter": "0.0.4",
+    "wdio-junit-reporter": "^0.1.0",
+    "wdio-sauce-service": "^0.2.5",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "^4.2.16"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-emma": "git+ssh://git@github.com/emmadev/eslint-config-emma.git#v1.1.0",
+    "eslint-plugin-react": "^3.11.3",
+    "newman": "^3.1.0",
+    "selenium-standalone": "^5.5.0"
+  }
+}
