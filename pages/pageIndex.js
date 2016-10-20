@@ -2,9 +2,7 @@
 import Router from './router';
 
 /** Utilities **/
-import API from './utilities/api.util';
 import Auth from './utilities/auth.util';
-
 
 /** Data **/
 import Account_data from './testData/account.data';
@@ -25,7 +23,6 @@ import SetLists_page from './pageObjects/setLists.page';
 
 export default {
     Router,
-    API,
     Auth,
     Text,
     Time,

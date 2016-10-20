@@ -1,2 +1,2 @@
-import pages from '../pages/src/pageIndex';
+import pages from '../pages/pageIndex';
 export default Object.assign({}, pages);

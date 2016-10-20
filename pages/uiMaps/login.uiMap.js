@@ -3,9 +3,9 @@
  */
 export default class UiMap {
 
-    /** URL & Title **/
+    /* URL & Title */
     get url() {
-        return `${browser.options.env.home_url}`;
+        return `${browser.options.env.login_url}`;
     }
 
     get title() {
@@ -16,8 +16,8 @@ export default class UiMap {
         return 'AdonisJs - Node.Js MVC Framework';
     }
 
-    /** Navigation **/
-    get navHeading() {
+    /* Navigation */
+    get aNavHeading() {
         return 'body > div.hero.is-primary > nav > h1 > a';
     }
 
@@ -37,6 +37,6 @@ export default class UiMap {
         return '#help';
     }
 
-    /** Page Contents**/
+    /* Page Contents */
 
 }

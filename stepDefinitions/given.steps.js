@@ -5,7 +5,7 @@
 "use strict";
 
 import container from './container';
-let _page, _account, _auth, _route, _api;
+let _page, _account, _auth, _route;
 const path = require('path');
 
 module.exports = function () {
@@ -111,5 +111,8 @@ module.exports = function () {
         _route = new container.Router();
         _page = _route.getContext();
         _page.fillElement(target, value);
+    });
+
+    this.Given(/^I am not logged in$/, () => {
     });
 };

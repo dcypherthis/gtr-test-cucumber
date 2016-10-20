@@ -29,9 +29,7 @@ exports.config = {
         tags: [], // ['@only', '@isolate'], // <string[]> (expression) only execute the features or scenarios with tags matching the expression
         timeout: 60000,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: true, // <boolean> Enable this config to treat undefined definitions as warnings.
-        cucumberOpts: {
-            require: ['./stepDefinitions/'],
-        },
+        require: ['./stepDefinitions/'], // relative path to the step files
     },
     before: function () { //eslint-disable-line object-shorthand
         var chai = require('chai'); //eslint-disable-line no-var

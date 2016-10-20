@@ -20,5 +20,8 @@ const devConf = {
     ],
     logLevel: 'result',
     reporters: ['dot', 'spec'],
+    // cucumberOpts: {
+    //     require: ['./stepDefinitions/'],
+    // },
 };
 exports.config = merge(masterConf.config, devConf);

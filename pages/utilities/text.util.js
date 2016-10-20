@@ -1,4 +1,4 @@
-const _time = require('./dateTime.util');
+const _time = require('./dateTime.util.js');
 const currentTime = _time.getFormattedTime();
 const testGroup = `Test - ${currentTime}`;
 
