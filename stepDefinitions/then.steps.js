@@ -103,7 +103,7 @@ module.exports = function () {
      *      value to compare property against
      *  @return {void}
      **/
-    this.Then(/^The text of (the )?"([^"]*)" should be (the )?"([^"]*)"/,
+    this.Then(/^The name of (the )?"([^"]*)" should be (the )?"([^"]*)"/,
         (article, target, article2, value) => {
             _route = new container.Router();
             _page = _route.getContext();

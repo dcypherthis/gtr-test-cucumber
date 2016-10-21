@@ -42,6 +42,18 @@ export default class Songs_page extends _Base_page {
                 return _elements.alertLoggedIn;
             case `Songs Heading`:
                 return _elements.h2Songs;
+            case `Plus Sign`:
+                return _elements.iconPlus;
+            case `Artist`:
+                return _elements.inputArtist;
+            case `Song Title`:
+                return _elements.inputSongTitle;
+            case `Spotify Url`:
+                return _elements.inputSpotify;
+            case `Save`:
+                return _elements.btnSave;
+            case `Song Added Message`:
+                return _elements.alertSongAdded;
             default:
                 let error = new Error(`\nMessage:\n    Element ${target} is not defined on the ${this.name}\nStack Trace:`); // eslint-disable-line prefer-const
                 error.message = `${error.stack}`;
@@ -50,5 +62,10 @@ export default class Songs_page extends _Base_page {
     }
 
     /* Page-Specific Functions */
+
+    enterInput(target, value) {
+        browser.waitForVisible(this.findSelector(target), 3000);
+        browser.setValue(this.findSelector(target), value);
+    }
 
 }

@@ -34,7 +34,6 @@ export default class auth {
      */
     softAuthCheck () {
         currentUrl = browser.getUrl();
-        console.log(currentUrl, "this is current");
         return currentUrl !== loginUrl;
     }
 

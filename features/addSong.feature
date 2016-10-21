@@ -1,4 +1,4 @@
-Feature: DEV: Add A New Song::
+Feature: Add A New Song::
 
     As a logged-in user
     I want to add a song
@@ -9,7 +9,7 @@ Feature: DEV: Add A New Song::
         Given   I am logged in as a "default" user
         And     I navigate to the "Songs" page
 
-    Scenario: Logging In with an existing account:
+    Scenario: Adding a Song:
 
         When    I click the "Plus Sign"
         And     I enter "St Lucia" for the "Artist" input
