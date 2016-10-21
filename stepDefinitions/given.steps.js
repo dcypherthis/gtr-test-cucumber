@@ -40,11 +40,11 @@ module.exports = function () {
      **/
     this.Given(/^I am logged in as (a )?(an )?(the )?"([^"]*)" user$/, (article1, article2, article3, accountType) => {
         _auth = new container.Auth();
-        if (_auth.softAuthCheck() === false) {
+        // if (_auth.softAuthCheck() === false) {
             _page = new container.Login_page();
             _page.navigate();
             _auth.login(accountType);
-        }
+        // }
     });
 
     /**

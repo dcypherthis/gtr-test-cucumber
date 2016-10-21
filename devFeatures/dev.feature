@@ -1,15 +1,15 @@
-Feature: Login::
+Feature: DEV: Add A New Song::
 
-    As a returning user
-    I want to log into the app
-    Because I want to start practicing my guitar
+    As a logged-in user
+    I want to add a song
+    So I can start practicing it.
+
+    Background: Logging In & Navigating to "Songs"
+
+        Given   I am logged in as a "default" user
+        And     I navigate to the "Songs" page
 
     Scenario: Logging In with an existing account:
 
-        Given   I navigate to the "Home" page
-        And     I am not logged in
-        When    I click "login"
-        Then    I should be on the "Login" page
-        And     I log in as a "default" user
-        Then    I should be on the "Songs" page
-        And     I should be logged in
+        When    I click "Logout"
+        Then    I should be on the "Home" page

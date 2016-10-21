@@ -1,10 +1,8 @@
-import login_page from '../pageObjects/login.page';
-const _login_page = new login_page();
-const loginUrl = (_login_page.getPageUrl());
+import Login_page from '../pageObjects/login.page';
 
-import home_page from '../pageObjects/home.page';
-const _home_page = new home_page();
-const homeUrl = (_home_page.getPageUrl());
+const _login_page = new Login_page();
+const loginUrl = browser.options.env.login_url;
+const homeUrl = browser.options.env.home_url;
 
 import Account_data from '../testData/account.data';
 const account = new Account_data();
@@ -28,15 +26,16 @@ export default class auth {
     }
 
     /**
-     * Compares the current url retrived from selnium with the loginUrl retrieved form
-     * the login_page {}. If the current url is not the login url and includes a '.e2ma'
+     * Compares the current url retrieved from selenium with the loginUrl retrieved from
+     * the login ui map. If the current url is not the login url
      * then the user is logged and returns true.
      *
      * @returns {boolean} true = The user is currently logged in
      */
     softAuthCheck () {
         currentUrl = browser.getUrl();
-        return currentUrl.includes("e2ma.net") && currentUrl !== loginUrl;
+        console.log(currentUrl, "this is current");
+        return currentUrl !== loginUrl;
     }
 
     /**
@@ -50,7 +49,7 @@ export default class auth {
             account.setCredential(accountType);
             _login_page.fillForm(account.username, account.password);
             _login_page.submit();
-            _home_page.isOnPage();
+            // _home_page.isOnPage();
         }
     }
 }
