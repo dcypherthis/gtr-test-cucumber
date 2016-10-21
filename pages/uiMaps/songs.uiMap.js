@@ -1,7 +1,9 @@
+import _Base_uiMap from './_Base.uiMap';
+
 /**
  * A class with keys and values for css selectors
  */
-export default class UiMap {
+export default class UiMap extends _Base_uiMap{
 
     /** URL & Title **/
     get url() {
@@ -16,27 +18,10 @@ export default class UiMap {
         return 'AdonisJs - Node.Js MVC Framework';
     }
 
-    /** Navigation **/
-    get navHeading() {
-        return 'body > div.hero.is-primary > nav > h1 > a';
-    }
+    /*  Page Contents */
 
-    get aNavSongs() {
-        return '.show-info';
+    get h2Songs() {
+        return 'body > section > div:nth-child(2) > div > div > nav > div.panel-heading.is-flex.is-space-between > h2'
     }
-
-    get aNavSetlists() {
-        return '.close-help';
-    }
-
-    get aNavProfile() {
-        return '#help > div > article > p';
-    }
-
-    get aNavLogout() {
-        return '#help';
-    }
-
-    /** Page Contents**/
 
 }

@@ -9,18 +9,30 @@ export default class UiMap {
     }
 
     get aNavSongs() {
-        return '.show-info';
+        return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(1)';
     }
 
     get aNavSetlists() {
-        return '.close-help';
+        return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(2)';
     }
 
     get aNavProfile() {
-        return '#help > div > article > p';
+        return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(3)';
     }
 
     get aNavLogout() {
-        return '#help';
+        return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(4)';
+    }
+
+    get aNavLogin() {
+        return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(2)';
+    }
+
+    get aNavSignup() {
+        return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(1)';
+    }
+
+    get alertLoggedIn() {
+        return 'body > section > div.container.alert-container > div > div > div > p';
     }
 }

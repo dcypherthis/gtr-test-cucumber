@@ -114,5 +114,8 @@ module.exports = function () {
     });
 
     this.Given(/^I am not logged in$/, () => {
+        _route = new container.Router();
+        _page = _route.getContext();
+        _page.checkVisibility(`Logout`, false);
     });
 };

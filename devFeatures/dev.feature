@@ -11,4 +11,5 @@ Feature: Login::
         When    I click "login"
         Then    I should be on the "Login" page
         And     I log in as a "default" user
-        Then    I should be logged in
+        Then    I should be on the "Songs" page
+        And     I should be logged in

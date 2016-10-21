@@ -128,4 +128,10 @@ module.exports = function () {
             expect(_page.assertProperty(target, value), `Expected ${target}'s text to be ${value}`).to.be.true;
         });
 
+    this.Then(/^I should be logged in/, () => {
+        _route = new container.Router;
+        _page = _route.getContext();
+        _page.checkVisibility(`Logged In Message`, true);
+    });
+
 };

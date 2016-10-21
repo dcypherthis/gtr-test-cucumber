@@ -40,8 +40,10 @@ export default class Home_page extends _Base_page {
                 return _elements.btnGetStarted;
             case `login`:
                 return _elements.aNavLogin;
+            case `signup`:
+                return _elements.aNavSignup;
             default:
-                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the home config\nStack Trace:`); // eslint-disable-line prefer-const
+                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the ${this.name}\nStack Trace:`); // eslint-disable-line prefer-const
                 error.message = `${error.stack}`;
                 throw error;
         }

@@ -38,8 +38,14 @@ export default class Login_page extends _Base_page {
                 return _elements.h1Message;
             case `Get Started Button`:
                 return _elements.btnGetStarted;
+            case `username`:
+                return _elements.inputUsername;
+            case `password`:
+                return _elements.inputPassword;
+            case `save`:
+                return _elements.btnSubmit;
             default:
-                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the home config\nStack Trace:`); // eslint-disable-line prefer-const
+                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the ${this.name}\nStack Trace:`); // eslint-disable-line prefer-const
                 error.message = `${error.stack}`;
                 throw error;
         }
@@ -48,11 +54,11 @@ export default class Login_page extends _Base_page {
     /* Page-Specific Functions */
 
     submit() {
-        this.waitAndClick('submit button', 30000);
+        this.waitAndClick(`save`);
     }
 
     fillForm(username, password) {
-        browser.waitForVisible(this.findSelector('heading'));
+        browser.waitForVisible(this.findSelector('Guitar Practice Header'));
         browser.setValue(this.findSelector('username'), username);
         browser.setValue(this.findSelector('password'), password);
     }

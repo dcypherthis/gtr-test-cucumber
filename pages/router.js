@@ -15,9 +15,7 @@ export default class router {
      */
     getContext() {
         currentUrl = browser.getUrl();
-        if (currentUrl.match(/https?:\/\/guitar-practice-app.*\.herokuapp.com/)) {
-            page = new pages.Home_page();
-        } else if (currentUrl.match(/login/)) {
+        if (currentUrl.match(/login/)) {
             page = new pages.Login_page();
         } else if (currentUrl.match(/profile/)) {
             page = new pages.Profile_page();
@@ -27,6 +25,8 @@ export default class router {
             page = new pages.Signup_page();
         } else if (currentUrl.match(/songs/)) {
             page = new pages.Songs_page();
+        } else if (currentUrl === browser.options.env.home_url) {
+            page = new pages.Home_page();
         } else {
             let error = new Error(`\nMessage:\n    The url, ${currentUrl}, does not match any pages defined in the router.js file\nStack Trace:`); // eslint-disable-line prefer-const
             error.message = `${error.stack}`;

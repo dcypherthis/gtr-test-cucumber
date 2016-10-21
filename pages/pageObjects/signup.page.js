@@ -39,7 +39,7 @@ export default class Signup_page extends _Base_page {
             case `Get Started Button`:
                 return _elements.btnGetStarted;
             default:
-                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the home config\nStack Trace:`); // eslint-disable-line prefer-const
+                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the ${this.name}\nStack Trace:`); // eslint-disable-line prefer-const
                 error.message = `${error.stack}`;
                 throw error;
         }

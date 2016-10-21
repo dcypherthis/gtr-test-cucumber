@@ -19,7 +19,7 @@ export default class Songs_page extends _Base_page {
     }
 
     pageLoadIndicator() {
-        return _elements.heading;
+        return this.findSelector(`Songs Heading`);
     }
 
     findSelector(target) {
@@ -38,8 +38,12 @@ export default class Songs_page extends _Base_page {
                 return _elements.h1Message;
             case `Get Started Button`:
                 return _elements.btnGetStarted;
+            case `Logged In Message`:
+                return _elements.alertLoggedIn;
+            case `Songs Heading`:
+                return _elements.h2Songs;
             default:
-                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the home config\nStack Trace:`); // eslint-disable-line prefer-const
+                let error = new Error(`\nMessage:\n    Element ${target} is not defined on the ${this.name}\nStack Trace:`); // eslint-disable-line prefer-const
                 error.message = `${error.stack}`;
                 throw error;
         }

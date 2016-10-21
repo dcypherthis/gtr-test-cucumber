@@ -13,8 +13,8 @@ export default class account_data {
     setCredential(accountType) {
         password = 'password';
         switch (accountType) {
-            case 'account1':
-                username = 'autobot+1@myemma.com';
+            case 'default':
+                username = 'autobot+gtr1@myemma.com';
                 break;
             default:
                 throw Error(`No username, password, or account id for a ${accountType} account was found. Please check the account.data.js file.`);
