@@ -38,6 +38,7 @@
     "config": "^1.21.0",
     "cucumber": "^1.2.0",
     "deepmerge": "^0.2.10",
+    "gtr-test-xray": "^0.1.4",
     "node-uuid": "^1.4.7",
     "request": "^2.74.0",
     "wdio-cucumber-framework": "0.2.5",
@@ -50,8 +51,6 @@
   },
   "devDependencies": {
     "eslint": "^3.4.0",
-    "eslint-config-emma": "git+ssh://git@github.com/emmadev/eslint-config-emma.git#v1.1.0",
-    "eslint-plugin-react": "^3.11.3",
     "selenium-standalone": "^5.5.0"
   }
 }
