@@ -5,17 +5,15 @@
 "use strict";
 
 import container from './container';
-let _page, _account, _auth, _route;
+let _page, _auth, _route;
 const path = require('path');
 
 module.exports = function () {
 
     /**
-     *  Navigating to a page by entering a URL where target is passed from a cucumber regex and is used to lookup the
+     *  @description Navigating to a page by entering a URL where target is passed from a cucumber regex and is used to lookup the
      *  corresponding page object via switch statement.
-     *
-     *  @param {String} target
-     *      The desired page
+     *  @param {String} target - The desired page
      *  @type {regex}
      *  @returns {void}
      *

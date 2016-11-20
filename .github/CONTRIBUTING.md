@@ -77,7 +77,6 @@ Use these Emjoi Decorators in the title of any issues you create:
 | Feature     | :moneybag: | `:moneybag:` | Value created for the customers & stakeholders, often for the UI Tests |
 | Enhancement | :sparkles: | `:sparkles:` | Improvements to quality and performance of the test suite |
 | Bug         | :bug:      | `:bug:`      | Problems with tooling, systems, or test code as it executes against production/shared environments |
-| Emma Defect | :beetle:   | `:beetle:`   | Defects discovered by the QUARTS team awaiting entry/documentation in JIRA |
 | Docs        | :books:    | `:books:`    | Information, guides, best practices, etc around automated testing |
 | Discussion  | :mega:     | `:mega:`     | Ongoing discussions or questions about anything |
 
@@ -100,11 +99,6 @@ a repository owner or core-contributor.
 We follow a feature branch workflow,
 when starting work you should create a new feature branch from `master`,
 and keep it up to date.
-
-Consider following this
-[naming pattern](https://github.com/waffleio/waffle.io/wiki/FAQs#automatically-move-issues-in-progress)
-for branch names. These patterns provide some automatic updates on the
-[Waffle Board](https://waffle.io/emmadev/quarts)
 
 ## Write Some Tests
 See [write-some-tests.md](/docs/write-some-tests.md#write-some-tests) for guidance
