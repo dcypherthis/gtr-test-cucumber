@@ -51,8 +51,6 @@
 
 ### Additional Comments
 
-# :beetle: Emma Defect: :beetle:
-
 # :books: Docs: :books:
 <!-- What needs to be documented? -->
 
