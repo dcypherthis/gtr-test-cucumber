@@ -2,6 +2,11 @@
 
 The cucumber example of testing a guitar practice app.
 
+- Application under test - (AdonisJS + VueJS) https://guitar-practice-app.herokuapp.com/
+- Test Library - https://github.com/dcypherthis/gtr-test-xray
+- Cucumber test example - https://github.com/dcypherthis/gtr-test-cucumber
+- Mocha test example - https://github.com/dcypherthis/gtr-test-mocha-bdd
+
 ## Setup
 
 This project uses node 6x and npm 3x.  We recommend using NVM (for Mac) to manage
