@@ -35,9 +35,8 @@
     "babel-register": "^6.14.0",
     "chai": "3.5.0",
     "config": "^1.21.0",
-    "cucumber": "^1.2.0",
+    "cucumber": "~1.2.0",
     "deepmerge": "^0.2.10",
-    "gtr-test-xray": "^0.1.4",
     "node-uuid": "^1.4.7",
     "request": "^2.74.0",
     "wdio-cucumber-framework": "0.2.5",
@@ -49,6 +48,6 @@
   },
   "devDependencies": {
     "eslint": "^3.4.0",
-    "selenium-standalone": "^5.5.0"
+    "selenium-standalone": "^6.12.0"
   }
 }
