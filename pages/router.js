@@ -53,18 +53,10 @@ var router = function () {
          */
         value: function getContext() {
             currentUrl = browser.getUrl();
-            if (currentUrl.match(/login/)) {
+            if (currentUrl.match()) {
                 page = new _pageIndex2.default.Login_page();
             } else if (currentUrl.match(/profile/)) {
                 page = new _pageIndex2.default.Profile_page();
-            } else if (currentUrl.match(/set-lists/)) {
-                page = new _pageIndex2.default.SetLists_page();
-            } else if (currentUrl.match(/signup/)) {
-                page = new _pageIndex2.default.Signup_page();
-            } else if (currentUrl.match(/songs/)) {
-                page = new _pageIndex2.default.Songs_page();
-            } else if (currentUrl === browser.options.env.home_url) {
-                page = new _pageIndex2.default.Home_page();
             } else {
                 var error = new Error('\nMessage:\n    The url, ' + currentUrl + ', does not match any pages defined in the router.js file\nStack Trace:'); // eslint-disable-line prefer-const
                 error.message = '' + error.stack;
@@ -97,20 +89,8 @@ var router = function () {
                 case 'Home':
                     page = new _pageIndex2.default.Home_page();
                     break;
-                case 'Login':
-                    page = new _pageIndex2.default.Login_page();
-                    break;
-                case 'Profile':
-                    page = new _pageIndex2.default.Profile_page();
-                    break;
-                case 'Set Lists':
-                    page = new _pageIndex2.default.SetLists_page();
-                    break;
-                case 'Signup':
-                    page = new _pageIndex2.default.Signup_page();
-                    break;
-                case 'Songs':
-                    page = new _pageIndex2.default.Songs_page();
+                case 'Videos':
+                    page = new _pageIndex2.default.Videos_page();
                     break;
                 default:
                     throw Error('The ' + targetPage + ' page is not defined as a valid route in router.setContext(targetPage)');
