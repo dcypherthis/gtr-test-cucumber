@@ -18,47 +18,9 @@ var UiMap = function () {
     }
 
     _createClass(UiMap, [{
-        key: 'aNavHeading',
-
-
-        /* Navigation */
+        key: 'aLonelyLogo',
         get: function get() {
-            return 'body > div.hero.is-primary > nav > h1 > a';
-        }
-    }, {
-        key: 'aNavSongs',
-        get: function get() {
-            return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(1)';
-        }
-    }, {
-        key: 'aNavSetlists',
-        get: function get() {
-            return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(2)';
-        }
-    }, {
-        key: 'aNavProfile',
-        get: function get() {
-            return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(3)';
-        }
-    }, {
-        key: 'aNavLogout',
-        get: function get() {
-            return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(4)';
-        }
-    }, {
-        key: 'aNavLogin',
-        get: function get() {
-            return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(2)';
-        }
-    }, {
-        key: 'aNavSignup',
-        get: function get() {
-            return 'body > div.hero.is-primary > nav > div.nav-right.nav-menu > a:nth-child(1)';
-        }
-    }, {
-        key: 'alertLoggedIn',
-        get: function get() {
-            return 'body > section > div.container.alert-container > div > div > div > p';
+            return 'a.lp-logo:nth-child(1) > svg:nth-child(1)';
         }
     }]);
 

@@ -52,11 +52,6 @@ var UiMap = function (_Base_uiMap2) {
         /* Page Contents */
 
     }, {
-        key: 'aLonelyLogo',
-        get: function get() {
-            return 'a.lp-logo:nth-child(1) > svg:nth-child(1)';
-        }
-    }, {
         key: 'aNavVideos',
         get: function get() {
             return 'li.js-nav-item:nth-child(2) > a:nth-child(1)'

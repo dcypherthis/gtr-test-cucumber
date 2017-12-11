@@ -12,3 +12,8 @@ Feature: Navigate to the major pages of the site::
 
         When I click "Videos"
         Then I should be on the "Videos" page
+
+    Scenario: When I click "Destinations" I am taken to the Destinations page
+
+        When I click "Destinations"
+        Then I should be on the "Destinations" page

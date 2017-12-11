@@ -10,9 +10,9 @@ var _base = require('../_base.page');
 
 var _base2 = _interopRequireDefault(_base);
 
-var _videos = require('./videos.uiMap');
+var _destinations = require('./destinations.uiMap');
 
-var _videos2 = _interopRequireDefault(_videos);
+var _destinations2 = _interopRequireDefault(_destinations);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25,34 +25,34 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var _elements = void 0;
 
 /**
- * @class Videos_page
+ * @class Destinations_page
  * @summary This page object represents the in-app upgrades page available to non-packaged pro accounts
  * @extends BasePage
  */
 
-var Videos_page = function (_BasePage) {
-    _inherits(Videos_page, _BasePage);
+var Destinations_page = function (_BasePage) {
+    _inherits(Destinations_page, _BasePage);
 
-    _createClass(Videos_page, [{
+    _createClass(Destinations_page, [{
         key: 'name',
 
 
         /* Default Functions */
         get: function get() {
-            return 'Videos Page';
+            return 'Destinations Page';
         }
     }]);
 
-    function Videos_page() {
-        _classCallCheck(this, Videos_page);
+    function Destinations_page() {
+        _classCallCheck(this, Destinations_page);
 
-        var _this = _possibleConstructorReturn(this, (Videos_page.__proto__ || Object.getPrototypeOf(Videos_page)).call(this));
+        var _this = _possibleConstructorReturn(this, (Destinations_page.__proto__ || Object.getPrototypeOf(Destinations_page)).call(this));
 
-        _elements = new _videos2.default();
+        _elements = new _destinations2.default();
         return _this;
     }
 
-    _createClass(Videos_page, [{
+    _createClass(Destinations_page, [{
         key: 'getPageUrl',
         value: function getPageUrl() {
             return _elements.url;
@@ -90,7 +90,7 @@ var Videos_page = function (_BasePage) {
 
     }]);
 
-    return Videos_page;
+    return Destinations_page;
 }(_base2.default);
 
-exports.default = Videos_page;
+exports.default = Destinations_page;

@@ -28,6 +28,10 @@ var _window = require('./utilities/window.util');
 
 var _window2 = _interopRequireDefault(_window);
 
+var _destinations = require('./pageObjects/destinations/destinations.page');
+
+var _destinations2 = _interopRequireDefault(_destinations);
+
 var _home = require('./pageObjects/home/home.page');
 
 var _home2 = _interopRequireDefault(_home);
@@ -57,6 +61,7 @@ exports.default = {
     Time: Time,
     Window: _window2.default,
     Account_data: _account2.default,
+    Destinations_page: _destinations2.default,
     Home_page: _home2.default,
     Videos_page: _videos2.default
 };

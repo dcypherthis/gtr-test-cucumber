@@ -57,6 +57,8 @@ var router = function () {
                 page = new _pageIndex2.default.Home_page();
             } else if (currentUrl.match(/video/)) {
                 page = new _pageIndex2.default.Videos_page();
+            } else if (currentUrl.match(/places/)) {
+                page = new _pageIndex2.default.Destinations_page();
             } else {
                 var error = new Error('\nMessage:\n    The url, ' + currentUrl + ', does not match any pages defined in the router.js file\nStack Trace:'); // eslint-disable-line prefer-const
                 error.message = '' + error.stack;
@@ -91,6 +93,9 @@ var router = function () {
                     break;
                 case 'Videos':
                     page = new _pageIndex2.default.Videos_page();
+                    break;
+                case 'Destinations':
+                    page = new _pageIndex2.default.Destinations_page();
                     break;
                 default:
                     throw Error('The ' + targetPage + ' page is not defined as a valid route in router.setContext(targetPage)');

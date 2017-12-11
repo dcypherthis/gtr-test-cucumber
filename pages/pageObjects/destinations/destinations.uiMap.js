@@ -36,7 +36,7 @@ var UiMap = function (_Base_uiMap2) {
 
         /* URL & Title */
         get: function get() {
-            return '' + browser.options.env.home_url;
+            return '' + browser.options.env.destinations_url;
         }
     }, {
         key: 'title',
@@ -46,7 +46,7 @@ var UiMap = function (_Base_uiMap2) {
     }, {
         key: 'titleText',
         get: function get() {
-            return 'Lonely Planet';
+            return 'Lonely Planet travel destinations';
         }
 
         /* Page Contents */
