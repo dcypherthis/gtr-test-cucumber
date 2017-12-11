@@ -8,9 +8,9 @@ var _router = require('./router');
 
 var _router2 = _interopRequireDefault(_router);
 
-var _auth = require('./utilities/auth.util');
+//var _auth = require('./utilities/auth.util');
 
-var _auth2 = _interopRequireDefault(_auth);
+//var _auth2 = _interopRequireDefault(_auth);
 
 var _account = require('./testData/account.data');
 
@@ -52,17 +52,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     Router: _router2.default,
-    Auth: _auth2.default,
+    //Auth: _auth2.default,
     Text: Text,
     Time: Time,
     Window: _window2.default,
     Account_data: _account2.default,
     Home_page: _home2.default,
-    Login_page: _login2.default,
-    Profile_page: _profile2.default,
-    SetLists_page: _setLists2.default,
-    Signup_page: _signup2.default,
-    Songs_page: _songs2.default,
     Videos_page: _videos2.default
 };
 

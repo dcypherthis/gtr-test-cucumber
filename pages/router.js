@@ -54,9 +54,9 @@ var router = function () {
         value: function getContext() {
             currentUrl = browser.getUrl();
             if (currentUrl.match()) {
-                page = new _pageIndex2.default.Login_page();
-            } else if (currentUrl.match(/profile/)) {
-                page = new _pageIndex2.default.Profile_page();
+                page = new _pageIndex2.default.Home_page();
+            } else if (currentUrl.match(/video/)) {
+                page = new _pageIndex2.default.Videos_page();
             } else {
                 var error = new Error('\nMessage:\n    The url, ' + currentUrl + ', does not match any pages defined in the router.js file\nStack Trace:'); // eslint-disable-line prefer-const
                 error.message = '' + error.stack;

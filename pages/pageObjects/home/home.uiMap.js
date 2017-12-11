@@ -46,21 +46,37 @@ var UiMap = function (_Base_uiMap2) {
     }, {
         key: 'titleText',
         get: function get() {
-            return 'AdonisJs - Node.Js MVC Framework';
+            return 'Lonely Planet';
         }
 
         /* Page Contents */
 
     }, {
-        key: 'h1Message',
+        key: 'aLonelyLogo',
         get: function get() {
-            return 'body > section > div > div > h1';
+            return 'a.lp-logo:nth-child(1) > svg:nth-child(1)';
         }
     }, {
-        key: 'btnGetStarted',
+        key: 'aNavVideos',
         get: function get() {
-            return 'body > section > div > div > h2 > a';
+            return 'li.js-nav-item:nth-child(2) > a:nth-child(1)'
         }
+    }, {
+        key: 'aNavDestinations',
+        get: function get() {
+            return 'li.js-nav-item:nth-child(3) > a:nth-child(1)'
+        }
+    }, {
+        key: 'aNavBookings',
+        get: function get() {
+            return 'li.js-nav-item:nth-child(4) > a:nth-child(1)'
+        }
+    }, {
+        key: 'aNavShop',
+        get: function get() {
+            return 'li.js-nav-item:nth-child(5) > a:nth-child(1)'
+        }
+    }, {
     }]);
 
     return UiMap;

@@ -60,30 +60,26 @@ var Home_page = function (_BasePage) {
     }, {
         key: 'pageLoadIndicator',
         value: function pageLoadIndicator() {
-            return this.findSelector('Guitar Practice Header');
+            return this.findSelector('Lonely Logo');
         }
     }, {
         key: 'findSelector',
         value: function findSelector(target) {
             switch (target) {
-                case 'Guitar Practice Header':
-                    return _elements.aNavHeading;
-                case 'Songs Navigation Link':
-                    return _elements.aNavSongs;
-                case 'My Set Lists Navigation Link':
-                    return _elements.aNavSetlists;
-                case 'Profile Navigation Link':
-                    return _elements.aNavProfile;
-                case 'Logout':
-                    return _elements.aNavLogout;
-                case 'Home Page Message':
-                    return _elements.h1Message;
-                case 'Get Started Button':
-                    return _elements.btnGetStarted;
-                case 'login':
-                    return _elements.aNavLogin;
-                case 'signup':
-                    return _elements.aNavSignup;
+                case 'Lonely Logo':
+                    return _elements.aLonelyLogo;
+                case 'Videos':
+                    return _elements.aNavVideos;
+                case 'Destinations':
+                    return _elements.aNavDestinations;
+                case 'Bookings':
+                    return _elements.aNavBookings;
+                case 'Search':
+                    return _elements.search;
+                case 'Shop':
+                    return _elements.aNavShop;
+                case 'Sign In':
+                    return _elements.aNavSignIn;
                 default:
                     var error = new Error('\nMessage:\n    Element ' + target + ' is not defined on the ' + this.name + '\nStack Trace:'); // eslint-disable-line prefer-const
                     error.message = '' + error.stack;

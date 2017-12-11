@@ -6,9 +6,9 @@ Feature: Navigate to the major pages of the site::
 
     Background: I am on the home page
 
-        Given I am on the "home" page
+        Given I navigate to the "Home" page
 
     Scenario: When I click "Videos" I am taken to the Videos page
 
-        When I click on the "Videos" links
-        Then I should see the "videos grid"
+        When I click "Videos"
+        Then I should be on the "Videos" page
