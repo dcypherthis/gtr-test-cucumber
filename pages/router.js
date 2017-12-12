@@ -46,7 +46,7 @@ var router = function () {
          * //step.js
          *     _page = new login_page();
          *     console.log(_page) // outputs: login_page{}
-         *     browser.url('home.e2ma.net'); // Navigates to https://home.myemma.com
+         *     browser.url('www.lonelyplanet.com'); // Navigates to https://www.lonelyplanet.com
          *     console.log(_page) // outputs: login_page{}
          *     Router.getContext(); // Looks up page based on current url
          *     console.log(_page) // outputs: home_page{}
@@ -59,6 +59,8 @@ var router = function () {
                 page = new _pageIndex2.default.Videos_page();
             } else if (currentUrl.match(/places/)) {
                 page = new _pageIndex2.default.Destinations_page();
+            } else if (currentUrl.match('https://shop.lonelyplanet.com/')) {
+                page = new _pageIndex2.default.Shop_page();
             } else {
                 var error = new Error('\nMessage:\n    The url, ' + currentUrl + ', does not match any pages defined in the router.js file\nStack Trace:'); // eslint-disable-line prefer-const
                 error.message = '' + error.stack;
@@ -96,6 +98,9 @@ var router = function () {
                     break;
                 case 'Destinations':
                     page = new _pageIndex2.default.Destinations_page();
+                    break;
+                case 'Shop':
+                    page = new _pageIndex2.default.Shop_page();
                     break;
                 default:
                     throw Error('The ' + targetPage + ' page is not defined as a valid route in router.setContext(targetPage)');

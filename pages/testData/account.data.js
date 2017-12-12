@@ -12,7 +12,7 @@ var username = void 0,
     password = void 0;
 
 /**
- * Helps manage account data associated with logging into emma
+ * Helps manage account data associated with logging in
  */
 
 var account_data = function () {
@@ -33,7 +33,7 @@ var account_data = function () {
             password = 'password';
             switch (accountType) {
                 case 'default':
-                    username = 'autobot+gtr1@myemma.com';
+                    username = 'username';
                     break;
                 default:
                     throw Error('No username, password, or account id for a ' + accountType + ' account was found. Please check the account.data.js file.');

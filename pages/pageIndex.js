@@ -36,6 +36,10 @@ var _home = require('./pageObjects/home/home.page');
 
 var _home2 = _interopRequireDefault(_home);
 
+var _shop = require('./pageObjects/shop/shop.page');
+
+var _shop2 = _interopRequireDefault(_shop);
+
 var _videos = require('./pageObjects/videos/videos.page');
 
 var _videos2 = _interopRequireDefault(_videos);
@@ -63,6 +67,7 @@ exports.default = {
     Account_data: _account2.default,
     Destinations_page: _destinations2.default,
     Home_page: _home2.default,
+    Shop_page: _shop2.default,
     Videos_page: _videos2.default
 };
 

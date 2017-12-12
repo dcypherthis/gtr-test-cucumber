@@ -17,3 +17,8 @@ Feature: Navigate to the major pages of the site::
 
         When I click "Destinations"
         Then I should be on the "Destinations" page
+
+    Scenario: When I click "Shop" I am taken to the Shop page
+
+        When I click "Shop"
+        Then I should be on the "Shop" page

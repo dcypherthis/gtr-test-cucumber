@@ -271,7 +271,7 @@ var BasePage = function () {
         /**
          * @summary Determines if an element is or is not visible on a page
          * @description We created this function in response to the WebdriverIO waitForVisible function fritzing out on us
-         * http://webdriver.io/api/utility/waitForVisible.html, https://github.com/emmadev/quarts/issues/250
+         * http://webdriver.io/api/utility/waitForVisible.html
          * @memberOf BasePage
          * @method waitForVisible
          * @param {string} selector - element to wait for

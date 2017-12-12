@@ -13,7 +13,8 @@
   },
   "contributors": [
     "Josh Cypher <jcypher@myemma.com> (http://github.com/dcypherthis/)",
-    "Jackson Streeter <jstreeter@myemma.com> (http://github.com/streeter8/)"
+    "Jackson Streeter <jstreeter@myemma.com> (http://github.com/streeter8/)",
+    "Brandon Wanamaker <huntgathergrow@gmail.com> (http://github.com/bwanamaker/)"
   ],
   "license": "MIT",
   "main": "config/master.conf.js",
