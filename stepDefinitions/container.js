@@ -1,2 +1,2 @@
-import pages from '../node_modules/gtr-test-xray/lib/pageIndex';
+import pages from '../pages/pageIndex';
 export default Object.assign({}, pages);
